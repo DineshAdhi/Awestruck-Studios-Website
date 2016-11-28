@@ -120,4 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT=os.path.join(BASE_DIR, 'awestruck_app/static')
+STATIC_ROOT=[os.path.join(BASE_DIR, 'awestruck_app/static'),os.path.join(BASE_DIR, 'awestruck_app/static/facebook.svg')
+,os.path.join(BASE_DIR, 'awestruck_app/static/instagram.svg'),os.path.join(BASE_DIR, 'awestruck_app/static/images/awestruck_image.jpg'),
+os.path.join(BASE_DIR, 'awestruck_app/static/images/Group-icon.png'),os.path.join(BASE_DIR, 'awestruck_app/static/awestruc-style.css')]
