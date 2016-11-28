@@ -7,6 +7,12 @@
   margin-right: 30px;
 }
 
+
+.gridLayout{
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
 .img-ourworks{
   width: 300px;
   height: 300px;
@@ -27,8 +33,13 @@
   margin-right: 50px;
 }
 
+.picturethumb{
+    box-shadow: 3px 3px 3px #A9A9A9;
+}
+
 .active{
   color: #42A5F5;
+  font-weight: bold;
 }
 
 .index-item-box{
