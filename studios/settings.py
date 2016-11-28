@@ -25,7 +25,7 @@ SECRET_KEY = '+z_d92(*yo08uwjgb++xr!k!bnq)!n3*r_%(m$-x*&b)07i5uv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'awestruck-studios.herokuapp.com',u'127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -120,6 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT=[os.path.join(BASE_DIR, 'awestruck_app/static'),os.path.join(BASE_DIR, 'awestruck_app/static/facebook.svg')
-,os.path.join(BASE_DIR, 'awestruck_app/static/instagram.svg'),os.path.join(BASE_DIR, 'awestruck_app/static/images/awestruck_image.jpg'),
-os.path.join(BASE_DIR, 'awestruck_app/static/images/Group-icon.png'),os.path.join(BASE_DIR, 'awestruck_app/static/awestruc-style.css')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'awestruck_app/static/images/'), os.path.join(BASE_DIR, 'awestruck_app/static/admin/'),
+os.path.join(BASE_DIR,'awestruck_app/static/css/'),os.path.join(BASE_DIR,'awestruck_app/static/img/'),os.path.join(BASE_DIR,'awestruck_app/static/js/')]
+STATIC_ROOT=os.path.join(BASE_DIR, 'awestruck_app/static')
