@@ -120,4 +120,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS=["/awestruck_app/static/"]
+STATICFILES_DIRS=["awestruck_app/static/"]
