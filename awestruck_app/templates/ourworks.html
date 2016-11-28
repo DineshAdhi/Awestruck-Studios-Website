@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div layout="column" layout-wrap>
+    {% for pic in urls %}
+      <img src={{pic}} class="img-ourworks">
+    {% endfor%}
+  </div>
+{% endblock %}

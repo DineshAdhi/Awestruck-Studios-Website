@@ -1,0 +1,38 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" style="text/css">
+  <link rel="stylesheet" href="/static/awestruck-style.css">
+  <link rel="stylesheet" href="/static/angular-material.min.css">
+  <script src="/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="toolbar">
+    <a href="/" class="navbar-brand" style="margin-left:20px"> <text class="brand-text"> Awestruck Studios </text> </a>
+     <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a href="/"> <text class="menu-text {% if nbar == 'aboutus' %} active {% endif %} ">  About us  </text> </a>
+    </li>
+    <li class="nav-item">
+      <a href="/ourworks/"><text class="menu-text {% if nbar == 'ourworks' %} active {% endif %}" > Our works </text> </a>
+    </li>
+    <li class="nav-item">
+      <a href="/ourcrew/"><text class="menu-text" > Our Crew </text> </a>
+    </li>
+    <li class="nav-item">
+      <a href="https://www.facebook.com/AweStruckcrew/" target="_blank"><text class="menu-text" >
+       <img class="index-icon" src="/static/facebook.svg"> <img> Facebook page   </text></a>
+    </li>
+    <li class="nav-item">
+      <a href="https://www.instagram.com/awestruckstudios/" target="_blank"><text class="menu-text" >
+       <img class="index-icon" src="/static/instagram.svg"> <img> Instagram page  </text></a>
+    </li>
+  </ul>
+
+</nav>
+
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
